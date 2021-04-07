@@ -1,73 +1,82 @@
 <html>
 
 <head>
-    <title>Calculo de Horas - PR</title>
-    <script src="jquery/jquery-3.5.1.js"></script>
-    <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-        </style>
+
+  <title>Calculo de Horas - PR</title>
+  <script src="jquery/jquery-3.5.1.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="all">
+
+  <link rel="stylesheet" href="css/styles/styles.css" type="text/css" media="all">
+
 </head>
 
 <body>
 
-    <textarea id="txtarea" rows="60" cols="50"></textarea>
-    <br>
-    <br>
-    <button id="enviar">Enviar dados</button>
+  <section id="infoText">
 
-    <div id="info">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center mt-5">
+
+          <textarea id="txtarea" rows="30" cols="50"></textarea>
+
+        </div>
+
+        <div class="col-12 text-center mt-3">
+          <!-- Button trigger modal -->
+          <button id="enviar" type="button" class="btn btn-success" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Enviar
+          </button>
+        </div>
+
+      </div>
 
     </div>
+  </section>
 
-    <script src="node_modules/hmh/index.js"></script>
-    <script type="text/javascript" src="js/ponto-pr.js"></script>
+
+  <br>
+  <br>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Horas da Semana</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div id="info">
+
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="node_modules/hmh/index.js"></script>
+  <script type="text/javascript" src="js/ponto-pr.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
